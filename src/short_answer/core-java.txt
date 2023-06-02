@@ -16,7 +16,7 @@ Explain the entire java life cycle.
 Answer:
 
 What is a class?
-Answer:
+Answer:  Class is where actual code lives, and it’s a template used to create objects and define object data type and method.
 
 What is an object?
 Answer:
