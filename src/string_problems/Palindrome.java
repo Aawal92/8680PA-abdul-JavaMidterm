@@ -11,9 +11,25 @@ public class Palindrome {
      */
 
     public static void main(String[] args) {
+        String word = "RACECAR";
+        System.out.println(isPalindrome(word));
 
     }
 
     // Implement here
+    public static boolean isPalindrome(String word){
+        int start_point = 0;
+        int end_point = word.length()-1;
+
+        while(start_point <= end_point){
+            if(word.charAt(start_point) != word.charAt(end_point)){
+                return false;
+            }
+            start_point++;
+            end_point--;
+        }
+        return true;
+    }
+
 
 }
