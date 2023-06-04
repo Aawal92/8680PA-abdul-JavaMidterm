@@ -12,8 +12,18 @@ public class CompanyEmployee {
      *  The goal of this application is to provide basic employee information services
      *  Try to think like a Software Developer
      */
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
+//
+//    }
+//
+    // My code
+    public static void main(String[] args){
+        EmployeeInfo walmart = new EmployeeInfo("Abdul", -101);
+        System.out.println(walmart.name);
+        //System.out.println(walmart.employeeID);
+
+        System.out.println(walmart.employeeId());
+
 
     }
-
 }
