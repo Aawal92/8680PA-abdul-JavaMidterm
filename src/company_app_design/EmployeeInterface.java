@@ -1,2 +1,6 @@
-package company_app_design;public class EmployeeInterface {
+package company_app_design;
+
+abstract class EmployeeInterface implements Employee{
+
+
 }
