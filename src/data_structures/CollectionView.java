@@ -1,6 +1,8 @@
 package data_structures;
 
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.Set;
 
 public class CollectionView {
 
@@ -20,6 +22,16 @@ public class CollectionView {
         map.put(4, "Boston");
         map.put(1, "NYC");
         map.put(3, "Denver");
+
+        Collection<String> states = map.values();
+        for(String state : states ){
+            System.out.println(state);
+        }
+
+//        Set<Integer> states = map.keySet();
+//        for(Integer state : states){
+//            System.out.println(map.get(states));
+//        }
 
     }
 
