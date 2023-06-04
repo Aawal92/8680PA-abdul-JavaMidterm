@@ -1,5 +1,8 @@
 package data_structures;
 
+import javax.annotation.processing.Filer;
+import java.io.*;
+
 public class DataReader {
 
     /** INSTRUCTIONS
@@ -20,6 +23,19 @@ public class DataReader {
 
     public static void main(String[] args) {
         String textFilePath = System.getProperty("user.dir") + "/src/data_structures/data/self-driving-car.txt";
+        File textFile = new File(textFilePath);
+
+        try{
+            FileReader fr = new FileReader(textFile); //passing in
+            BufferedReader br = new BufferedReader(fr);
+            String line;
+            while((line = br.readLine()) != null){
+                System.out.println(line);
+            }
+
+        }catch (IOException ioe){
+            ioe.printStackTrace();
+        }
 
     }
 
