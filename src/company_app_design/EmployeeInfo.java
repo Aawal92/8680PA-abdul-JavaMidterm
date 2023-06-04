@@ -2,7 +2,7 @@ package company_app_design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
+public class EmployeeInfo extends EmployeeInterface {
 
     /** INSTRUCTIONS
      *
@@ -23,13 +23,19 @@ public class EmployeeInfo {
 
     // Make sure to declare and use static, non-static & final fields
     static final String companyName = "Tesla";
+    int employeeID;
+    String name;
 
     // You must have/use multiple constructors to initialize instance variables that you will create above
     public EmployeeInfo(int employeeId) {
+        this.employeeID = employeeId;
+
 
     }
 
     public EmployeeInfo(String name, int employeeId) {
+        this.name = name;
+        this.employeeID = employeeId;
 
     }
 
@@ -71,6 +77,35 @@ public class EmployeeInfo {
         // Calculate pension
 
         return total;
+    }
+
+    @Override
+    public int employeeId() {
+        if(employeeID < -1){
+            return -1;
+        }
+        return employeeID;
+    }
+
+    @Override
+    public String employeeName() {
+        return null;
+    }
+
+    @Override
+    public void assignDepartment() {
+
+
+    }
+
+    @Override
+    public int calculateSalary() {
+        return 0;
+    }
+
+    @Override
+    public void benefits() {
+
     }
 
     private static class DateConversion {
